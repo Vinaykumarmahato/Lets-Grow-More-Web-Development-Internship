@@ -1,0 +1,131 @@
+body {
+    background-color: #ffff;
+    background-image: linear-gradient(to bottom, #fdfdfa 10%, #54ff0b 90%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 10vh 0 0 0;
+    font-family: sans-serif;
+    font-size: 2rem;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto; /* Prevent horizontal overflow on smaller devices */
+  }
+  
+  table {
+    table-layout: initial;
+    margin: 40px auto;
+    border-style: groove;
+    background-color: transparent;
+    width: 100%;
+  }
+  
+  table.list {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border-radius: 0.5cm;
+    overflow-x: auto;
+  }
+  
+  td {
+    border: 1px solid rgb(204, 200, 200);
+    text-align: left;
+    padding: 8px 15px;
+    background-color: rgb(179, 84, 67);
+  }
+  
+  tr:nth-child(even),
+  table.list thead tr {
+    background-color: #d0f1bf;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: #1c2541;
+    border-radius: 1.5cm;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  button:hover {
+    background: #3fb1e6;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    background: #4421f3;
+    color: white;
+    font-size: 1.2rem;
+    font-family: cursive;
+  }
+  
+  tbody {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .input-part {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+  }
+  
+  button {
+    background: #0a3b1e;
+    color: white;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* Tablets and larger */
+  @media only screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .container > table {
+      flex-basis: 50%;
+    }
+  }
+  
+  /* Large screens and higher */
+  @media only screen and (min-width: 1200px) {
+    .container > table {
+      flex-basis: 30%;
+    }
+  }
+  

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Result Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Result Management System</h1>
+  </header>
+
+  <div class="container">
+    <h2>Student Login</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div class="container" id="resultContainer" style="display: none;">
+    <h2>Welcome, <span id="usernameSpan"></span>!</h2>
+    <h3>Your Results:</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="resultTableBody">
+        <!-- Results will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
